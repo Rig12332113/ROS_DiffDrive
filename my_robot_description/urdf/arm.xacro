@@ -17,6 +17,14 @@
                 <origin xyz="${x} ${y} ${z}" />
                 <material name="${color}" />
             </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${arm_radius}" length="${arm_length}" />
+                </geometry>
+                <origin xyz="${x} ${y} ${z}" />
+            </collision>
+            <xacro:cylinder_inertia m="0.3" r="${arm_radius}" h="${arm_length}" 
+                                    o_xyz="${x} ${y} ${z}" o_rpy="0 0 0" />
         </link>
     </xacro:macro>
     
@@ -29,7 +37,15 @@
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <material name="orange" />
         </visual>
+        <collision>
+            <geometry>
+                <box size="${arm_base_length} ${arm_base_width} ${arm_base_height}" />
+            </geometry>
+        </collision>
+        <xacro:box_inertia m="0.5" x="${arm_base_length}" y="${arm_base_width}" z="${arm_base_height}"
+                           o_xyz="0 0 0" o_rpy="0 0 0" />
     </link>
+
     <xacro:arms name="forearm" x="0" y="0" z="${arm_length / 2.0}" color="yellow" />
     <xacro:arms name="hand" x="0" y="0" z="${arm_length / 2.0}" color="orange" />
 

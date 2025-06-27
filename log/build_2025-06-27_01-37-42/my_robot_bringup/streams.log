@@ -1,0 +1,44 @@
+[0.041s] Invoking command in '/home/rick/ros2_ws/src/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rick/ros2_ws/src/my_robot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rick/ros2_ws/src/install/my_robot_bringup
+[0.714s] -- The C compiler identification is GNU 13.3.0
+[1.067s] -- The CXX compiler identification is GNU 13.3.0
+[1.133s] -- Detecting C compiler ABI info
+[1.366s] -- Detecting C compiler ABI info - done
+[1.384s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.387s] -- Detecting C compile features
+[1.388s] -- Detecting C compile features - done
+[1.409s] -- Detecting CXX compiler ABI info
+[1.660s] -- Detecting CXX compiler ABI info - done
+[1.678s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.681s] -- Detecting CXX compile features
+[1.681s] -- Detecting CXX compile features - done
+[1.753s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[2.080s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[2.252s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.596s] -- Configuring done (2.3s)
+[2.603s] -- Generating done (0.0s)
+[2.608s] -- Build files have been written to: /home/rick/ros2_ws/src/build/my_robot_bringup
+[2.626s] Invoked command in '/home/rick/ros2_ws/src/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/rick/ros2_ws/src/my_robot_bringup -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/rick/ros2_ws/src/install/my_robot_bringup
+[2.627s] Invoking command in '/home/rick/ros2_ws/src/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rick/ros2_ws/src/build/my_robot_bringup -- -j4 -l4
+[2.746s] Invoked command in '/home/rick/ros2_ws/src/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/rick/ros2_ws/src/build/my_robot_bringup -- -j4 -l4
+[2.750s] Invoking command in '/home/rick/ros2_ws/src/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rick/ros2_ws/src/build/my_robot_bringup
+[2.771s] -- Install configuration: ""
+[2.772s] -- Execute custom install script
+[2.772s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup//launch/my_robot_gazebo.launch.xml
+[2.792s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup//config/gazebo_bridge.yaml
+[2.813s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup//worlds/test_world.sdf
+[2.833s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup
+[2.855s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup
+[2.876s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.sh
+[2.898s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.dsv
+[2.917s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/environment/path.sh
+[2.940s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/environment/path.dsv
+[2.960s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/local_setup.bash
+[2.979s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/local_setup.sh
+[3.000s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/local_setup.zsh
+[3.020s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/local_setup.dsv
+[3.045s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/package.dsv
+[3.066s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/ament_index/resource_index/packages/my_robot_bringup
+[3.086s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig.cmake
+[3.109s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig-version.cmake
+[3.131s] -- Symlinking: /home/rick/ros2_ws/src/install/my_robot_bringup/share/my_robot_bringup/package.xml
+[3.156s] Invoked command in '/home/rick/ros2_ws/src/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/rick/ros2_ws/src/build/my_robot_bringup
