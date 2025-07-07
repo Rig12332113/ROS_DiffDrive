@@ -87,10 +87,10 @@
         <child link="base_link" />
         <origin xyz="0 0 ${wheel_radius}" />
     </joint>
-    <joint name="base_arm" type="fixed">
+    <!-- <joint name="base_arm" type="fixed">
         <parent link="base_link" />
         <child link="arm_base_link" />
         <origin xyz="${base_length / 4} 0 ${base_height}" />
-    </joint>
+    </joint> -->
     
 </robot>
