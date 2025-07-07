@@ -15,9 +15,6 @@ First run command to start simulation.
 ```
 ros2 launch my_robot_ros_control.launch.xml
 ```
-Note: The diff_cont is listen to topic diff_cont/cmd_vel.
-      The params use_stamped_vel cannot be set, so please directly publish stamped twist to control the robot.
-
 Second, spawn controllers: (joint_broad and diff_cont)
 ```
 ros2 run controller_manager spawner joint_broad
@@ -25,6 +22,8 @@ ros2 run controller_manager spawner diff_cont
 ```
 
 After spawn controllers successful, run the following code to control differential drive in gazebo.
+Note: The diff_cont is listen to topic diff_cont/cmd_vel.
+      The params use_stamped_vel cannot be set, so please directly publish stamped twist to control the robot.
 
 '''
 ros2 topic pub /diff_cont/cmd_vel_unstamped geometry_msgs/msg/Twist "{
