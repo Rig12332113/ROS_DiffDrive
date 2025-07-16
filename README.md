@@ -3,7 +3,7 @@ This repo contains the urdf and gazebo plugin for gazebpo simulation.
 
 ## Control with gazebo bridge:
 ```
-ros2 launch my_robot_gazebo.launch.xml
+ros2 launch my_robot_bringup my_robot_gazebo.launch.xml
 ```
 Note: There is a robot arm for practice. To enable robot arm, uncomment arm
      in my_robot.urdf.xml and joint in mobile_base.
@@ -13,7 +13,7 @@ https://github.com/user-attachments/assets/a09042b4-92fb-42aa-a899-aa9f6484632f
 ## Change control to ros2_control:
 First run command to start simulation.
 ```
-ros2 launch my_robot_ros_control.launch.xml
+ros2 launch my_robot-bringup my_robot_ros_control.launch.xml
 ```
 Second, spawn controllers: (joint_broad and diff_cont)
 ```
