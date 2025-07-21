@@ -32,3 +32,11 @@ ros2 topic pub /diff_cont/cmd_vel_unstamped geometry_msgs/msg/Twist "{
 }" -1
 ```
 
+## Load map to rviz
+To load map constructed by slam toolbox, use the following code and run rviz and gazebo.
+<img width="3840" height="2160" alt="Screenshot from 2025-07-21 21-46-32" src="https://github.com/user-attachments/assets/39993459-ee78-4a25-b504-7db2d6002006" />
+
+```
+ros2 launch slam_toolbox online_async_launch.py slam_params_file:=./src/my_robot_bringup/config/mapper_params_online_async.yaml use_sim_time:=true
+```
+
