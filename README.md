@@ -39,4 +39,16 @@ To load map constructed by slam toolbox, use the following code and run rviz and
 ```
 ros2 launch slam_toolbox online_async_launch.py slam_params_file:=./src/my_robot_bringup/config/mapper_params_online_async.yaml use_sim_time:=true
 ```
+## amcl
+Start map server (through nav2)
+```
+ros2 run nav2_map_server map_server --ros-args -p yaml_filename:=map_save.yaml -p use_sim_time:=true
+ros2 run nav2_util lifecycle_bringup map_server
+```
+If rviz doesn't show up map, change map->topic->Durability policy to transient local.
 
+Start amcl (adaptive monte carlo localization)
+```
+ros2 run nav2_amcl amcl --ros-args -p use_sim_time:=true
+ros2 run nav2_util lifecycle_bringup amcl
+```
