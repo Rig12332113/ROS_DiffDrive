@@ -52,3 +52,10 @@ Start amcl (adaptive monte carlo localization)
 ros2 run nav2_amcl amcl --ros-args -p use_sim_time:=true
 ros2 run nav2_util lifecycle_bringup amcl
 ```
+
+## Navigation with nav2
+Run simulation and load map in previous step first, and launch nav2 for cost_map and navigation.
+```
+ros2 launch nav2_bringup navigation_launch.py use_sim_time:=true
+```
+Note: If you can't navigate the robot with goal pose in rviz because of transform rate, try to set transform_timeout in mapper_params_online_async.yaml to higher value.
